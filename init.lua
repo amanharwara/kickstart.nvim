@@ -977,3 +977,7 @@ require('lazy').setup({
 -- Center screen on C-d and C-u
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<leader>t[', ':tabprev<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>t]', ':tabnext<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>tn', ':tabnew<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>tw', ':tabclose<CR>', { noremap = true, silent = true })
